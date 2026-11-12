@@ -1,7 +1,10 @@
 
-const tombol = document.getElementById("sapagwe");
+// Greeting Button
+const greetingButton = document.getElementById("greeting-button");
 
-tombol.addEventListener("click", function() {
-    alert("Halo! Selamat datang di website Lungit!");
+// Button Interaction
+greetingButton.addEventListener("click", function() {
+
+    alert("Hello! Welcome to my personal portfolio. Thank you for visiting!");
+
 });
-
