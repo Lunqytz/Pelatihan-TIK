@@ -1,45 +1,440 @@
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Personal portfolio of Lungit Tibra, Photographer and Visual Artist.">
+    <meta name="description" content="The personal portfolio of Lungit Tibra, Photographer and Visual Artist.">
 
-    <title>Lungit Tibra | Personal Portfolio</title>
+    <title>Lungit Tibra | Creative Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="profile-card">
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
 
-        <img src="IMG_0841.JPG" alt="Profile Photo of Lungit Tibra">
+            <a href="#home" class="logo">
+                LUN<span>GIT.</span>
+            </a>
 
-        <h1>Lungit Tibra</h1>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
 
-        <p>
-            Photographer & Visual Artist.
-            Exploring Pet Photography, Wildlife Photography,
-            Astrophotography, Macro Photography,
-            Night Photography, Drawing, and Digital Art.
-        </p>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <a
-            href="https://www.instagram.com/lunqytz/"
-            target="_blank"
-            rel="noopener noreferrer">
-            Visit Instagram
-        </a>
+        </nav>
+    </header>
 
-        <button id="greeting-button">
-            Say Hello
-        </button>
 
-    </div>
+    <!-- HERO SECTION -->
+    <section class="hero container" id="home">
+
+        <div class="hero-content reveal">
+
+            <span class="eyebrow">
+                <span class="status-dot"></span>
+                PHOTOGRAPHER & VISUAL ARTIST
+            </span>
+
+            <h1>
+                Hello, I'm<br>
+                <span>Lungit Tibra.</span>
+            </h1>
+
+            <p>
+                Capturing moments, exploring creativity,
+                and creating visual stories through
+                photography and digital art.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    Explore My Work
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Get in Touch
+                </a>
+            </div>
+
+            <div class="hero-social">
+                <span>FOLLOW MY JOURNEY</span>
+                <a href="https://www.instagram.com/lunqytz/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+            <div class="image-decoration"></div>
+
+            <img src="IMG_0841.JPG" alt="Portrait of Lungit Tibra">
+
+            <div class="image-caption">
+                <span>CREATIVE PORTFOLIO</span>
+                <strong>2026 — PRESENT</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section container" id="about">
+
+        <div class="section-heading reveal">
+            <span class="section-label">01 / ABOUT ME</span>
+            <h2>A Little About <span>Myself.</span></h2>
+        </div>
+
+        <div class="about-content reveal">
+
+            <div class="about-text">
+                <h3>Creativity is my way of seeing the world.</h3>
+
+                <p>
+                    Hello! I'm Lungit Tibra, a student of Visual
+                    Communication Design (DKV) with a strong
+                    interest in photography and visual arts.
+                </p>
+
+                <p>
+                    I enjoy capturing moments, exploring nature,
+                    observing small details, and transforming
+                    ideas into visual creations through
+                    photography, drawing, and digital design.
+                </p>
+
+                <p>
+                    This website is a collection of my creative
+                    journey, personal projects, and selected works.
+                </p>
+            </div>
+
+            <div class="about-info">
+
+                <div class="info-item">
+                    <span>NAME</span>
+                    <strong>Lungit Tibra</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>FIELD</span>
+                    <strong>Photography & Digital Art</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>EDUCATION</span>
+                    <strong>Visual Communication Design</strong>
+                </div>
+
+                <div class="info-item">
+                    <span>LOCATION</span>
+                    <strong>Indonesia</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section portfolio-section" id="portfolio">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">02 / MY PORTFOLIO</span>
+                <h2>Explore My <span>Creative World.</span></h2>
+
+                <p>
+                    A collection of my interests, creative experiments,
+                    and visual projects.
+                </p>
+            </div>
+
+
+            <div class="portfolio-grid">
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🐈</div>
+                    <span>01 / PHOTOGRAPHY</span>
+                    <h3>Pet Photography</h3>
+                    <p>Capturing the personality and charm of animals.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">✏️</div>
+                    <span>02 / ART</span>
+                    <h3>Drawing</h3>
+                    <p>Expressing ideas through illustrations and sketches.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🌙</div>
+                    <span>03 / PHOTOGRAPHY</span>
+                    <h3>Astrophotography</h3>
+                    <p>Exploring the beauty of the night sky and space.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">📷</div>
+                    <span>04 / PHOTOGRAPHY</span>
+                    <h3>Photography</h3>
+                    <p>Documenting moments, places, and everyday life.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🦅</div>
+                    <span>05 / PHOTOGRAPHY</span>
+                    <h3>Wildlife Photography</h3>
+                    <p>Discovering wildlife through the camera lens.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">👤</div>
+                    <span>06 / PHOTOGRAPHY</span>
+                    <h3>People Photography</h3>
+                    <p>Capturing human expressions and moments.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🌸</div>
+                    <span>07 / PHOTOGRAPHY</span>
+                    <h3>Macro Photography</h3>
+                    <p>Discovering beauty in the smallest details.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🎨</div>
+                    <span>08 / GRAPHIC DESIGN</span>
+                    <h3>Illustrator Work</h3>
+                    <p>Creating vector graphics and visual compositions.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🖌️</div>
+                    <span>09 / DIGITAL ART</span>
+                    <h3>Photoshop Work</h3>
+                    <p>Photo manipulation, editing, and digital artwork.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+
+                <a href="#contact" class="portfolio-card reveal">
+                    <div class="portfolio-icon">🌃</div>
+                    <span>10 / PHOTOGRAPHY</span>
+                    <h3>Night Photography</h3>
+                    <p>Capturing atmosphere and light after dark.</p>
+                    <div class="card-arrow">↗</div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="section container" id="skills">
+
+        <div class="section-heading reveal">
+            <span class="section-label">03 / MY SKILLS</span>
+            <h2>Creative <span>Tools.</span></h2>
+
+            <p>
+                Software and creative fields I enjoy exploring.
+            </p>
+        </div>
+
+
+        <div class="skills-grid reveal">
+
+            <div class="skill-item">
+                <div class="skill-symbol">Ps</div>
+                <div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Photo Editing & Digital Art</p>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-symbol illustrator">Ai</div>
+                <div>
+                    <h3>Adobe Illustrator</h3>
+                    <p>Vector Design & Illustration</p>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-symbol camera">📷</div>
+                <div>
+                    <h3>Photography</h3>
+                    <p>Visual Storytelling & Composition</p>
+                </div>
+            </div>
+
+
+            <div class="skill-item">
+                <div class="skill-symbol art">✏️</div>
+                <div>
+                    <h3>Drawing</h3>
+                    <p>Sketching & Creative Illustration</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED WORKS -->
+    <section class="section featured-section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">04 / CREATIVE JOURNEY</span>
+                <h2>Every Frame Tells <span>A Story.</span></h2>
+
+                <p>
+                    Every photograph and design represents
+                    a part of my creative journey.
+                </p>
+            </div>
+
+
+            <div class="featured-box reveal">
+
+                <div class="featured-content">
+                    <span>PERSONAL PROJECTS</span>
+
+                    <h3>
+                        Observe.<br>
+                        Capture.<br>
+                        Create.
+                    </h3>
+
+                    <p>
+                        A continuous journey of learning,
+                        experimenting, and developing
+                        my creative skills.
+                    </p>
+
+                    <a href="https://www.instagram.com/lunqytz/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View My Instagram ↗
+                    </a>
+                </div>
+
+                <div class="featured-decoration">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <span>CREATIVITY</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section container" id="contact">
+
+        <div class="contact-box reveal">
+
+            <span class="section-label">05 / GET IN TOUCH</span>
+
+            <h2>Let's Connect <span>Together.</span></h2>
+
+            <p>
+                Thank you for visiting my portfolio.
+                Feel free to explore my work and connect
+                with me through Instagram.
+            </p>
+
+            <a href="https://www.instagram.com/lunqytz/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary">
+                Contact Me on Instagram ↗
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                LUN<span>GIT.</span>
+            </a>
+
+            <p>
+                © <span id="current-year">2026</span>
+                Lungit Tibra. All Rights Reserved.
+            </p>
+
+            <a href="#home" class="back-top">
+                Back to Top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
 
     <script src="script.js"></script>
 
