@@ -6,32 +6,30 @@
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", function () {
+if (menuToggle && navLinks) {
 
-    const isOpen = navLinks.classList.toggle("show");
+    menuToggle.addEventListener("click", function () {
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
+        const isOpen = navLinks.classList.toggle("show");
 
-    menuToggle.textContent = isOpen ? "✕" : "☰";
-
-});
-
-
-/* CLOSE MENU AFTER CLICK */
-
-document.querySelectorAll(".nav-links a").forEach(function (link) {
-
-    link.addEventListener("click", function () {
-
-        navLinks.classList.remove("show");
-
-        menuToggle.setAttribute("aria-expanded", "false");
-
-        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.textContent = isOpen ? "✕" : "☰";
 
     });
 
-});
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("show");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+
+}
 
 
 /* =====================================
@@ -50,7 +48,6 @@ if ("IntersectionObserver" in window) {
                 if (entry.isIntersecting) {
 
                     entry.target.classList.add("active");
-
                     observer.unobserve(entry.target);
 
                 }
@@ -67,22 +64,18 @@ if ("IntersectionObserver" in window) {
         revealObserver.observe(element);
     });
 
-} else {
-
-    revealElements.forEach(function (element) {
-        element.classList.add("active");
-    });
-
 }
 
 
 /* =====================================
-   3. AUTOMATIC COPYRIGHT YEAR
+   3. COPYRIGHT YEAR
 ===================================== */
 
 const yearElement = document.getElementById("current-year");
 
-yearElement.textContent = new Date().getFullYear();
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
 
 /* =====================================
