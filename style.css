@@ -829,3 +829,84 @@ section {
         transform: none;
     }
 }
+
+
+/* =====================================
+   FIX HERO SECTION & RESPONSIVE
+===================================== */
+
+/* Pastikan seluruh elemen tetap terlihat */
+.reveal {
+    opacity: 1;
+    transform: none;
+}
+
+/* Tampilan tablet dan layar menengah */
+@media (min-width: 651px) and (max-width: 768px) {
+
+    .hero {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+        align-items: center;
+        gap: 25px;
+        min-height: 560px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 5vw, 46px);
+    }
+
+    .hero-content > p {
+        font-size: 13px;
+    }
+
+    .hero-image {
+        max-width: 260px;
+        padding: 8px;
+    }
+
+    .image-frame {
+        height: 350px;
+    }
+
+    .image-label {
+        left: 18px;
+        right: 18px;
+        bottom: 20px;
+    }
+
+    .hero-buttons {
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+}
+
+/* Tampilan smartphone */
+@media (max-width: 650px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 280px;
+        justify-self: center;
+    }
+
+    .image-frame {
+        height: 340px;
+    }
+}
