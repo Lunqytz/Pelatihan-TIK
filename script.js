@@ -35,42 +35,49 @@ document.querySelectorAll(".nav-links a").forEach(function (link) {
 
 
 /* =====================================
-   2. SCROLL REVEAL ANIMATION
+   2. SCROLL REVEAL
 ===================================== */
 
 const revealElements = document.querySelectorAll(".reveal");
 
-const revealObserver = new IntersectionObserver(
-    function (entries) {
+if ("IntersectionObserver" in window) {
 
-        entries.forEach(function (entry) {
+    const revealObserver = new IntersectionObserver(
+        function (entries, observer) {
 
-            if (entry.isIntersecting) {
+            entries.forEach(function (entry) {
 
-                entry.target.classList.add("active");
+                if (entry.isIntersecting) {
 
-                revealObserver.unobserve(entry.target);
+                    entry.target.classList.add("active");
 
-            }
+                    observer.unobserve(entry.target);
 
-        });
+                }
 
-    },
-    {
-        threshold: 0.12
-    }
-);
+            });
 
+        },
+        {
+            threshold: 0.1
+        }
+    );
 
-revealElements.forEach(function (element) {
+    revealElements.forEach(function (element) {
+        revealObserver.observe(element);
+    });
 
-    revealObserver.observe(element);
+} else {
 
-});
+    revealElements.forEach(function (element) {
+        element.classList.add("active");
+    });
+
+}
 
 
 /* =====================================
-   3. CURRENT YEAR
+   3. AUTOMATIC COPYRIGHT YEAR
 ===================================== */
 
 const yearElement = document.getElementById("current-year");
@@ -79,8 +86,8 @@ yearElement.textContent = new Date().getFullYear();
 
 
 /* =====================================
-   4. WELCOME MESSAGE
+   4. CONSOLE MESSAGE
 ===================================== */
 
-console.log("Welcome to Lungit Tibra's Portfolio!");
-console.log("Thank you for visiting my website.");
+console.log("Welcome to Lungit Tibra's Creative Portfolio!");
+console.log("Thank you for visiting.");
