@@ -1,106 +1,158 @@
 
-/* RESET */
+/* ==========================
+   RESET
+========================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* BACKGROUND */
+/* ==========================
+   BODY & BACKGROUND
+========================== */
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #0f172a, #1e3a5f, #0f172a);
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a5f,
+        #0f172a
+    );
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
-/* PROFILE CARD */
-.profil-gweh {
-  width: 340px;
-  padding: 35px 25px;
-  background: rgba(15, 23, 42, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  transition: 0.3s ease;
+/* ==========================
+   PROFILE CARD
+========================== */
+.profile-card {
+    width: 360px;
+    padding: 40px 28px;
+
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    transition: all 0.3s ease;
 }
 
 /* CARD HOVER */
-.profil-gweh:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-/* PROFILE IMAGE */
-.profil-gweh img {
-  display: block;
-  width: 130px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  border: 4px solid #38bdf8;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+/* ==========================
+   PROFILE IMAGE
+========================== */
+.profile-card img {
+    display: block;
+
+    width: 135px;
+    height: 135px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    margin: 0 auto 22px;
+
+    border: 4px solid #38bdf8;
+
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
 }
 
-/* NAME */
-.profil-gweh h1 {
-  font-size: 25px;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
+/* ==========================
+   PROFILE NAME
+========================== */
+.profile-card h1 {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
 }
 
-/* DESCRIPTION */
-.profil-gweh p {
-  color: #cbd5e1;
-  font-size: 14px;
-  line-height: 1.7;
-  margin-bottom: 25px;
+/* ==========================
+   PROFILE DESCRIPTION
+========================== */
+.profile-card p {
+    color: #cbd5e1;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
 }
 
-/* LINKS */
-.profil-gweh a {
-  display: inline-block;
-  padding: 10px 18px;
-  background: #0ea5e9;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: bold;
-  transition: 0.3s;
+/* ==========================
+   INSTAGRAM LINK
+========================== */
+.profile-card a {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background: #0ea5e9;
+    color: #ffffff;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
 }
 
-.profil-gweh a:hover {
-  background: #0284c7;
-  transform: scale(1.05);
+.profile-card a:hover {
+    background: #0284c7;
+    transform: scale(1.05);
 }
 
-/* BUTTON */
-.profil-gweh button {
-  padding: 10px 18px;
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 13px;
-  transition: 0.3s;
+/* ==========================
+   GREETING BUTTON
+========================== */
+.profile-card button {
+    padding: 11px 20px;
+    margin-top: 10px;
+
+    background: transparent;
+
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
 }
 
-.profil-gweh button:hover {
-  background: #38bdf8;
-  color: #0f172a;
+.profile-card button:hover {
+    background: #38bdf8;
+    color: #0f172a;
 }
 
-/* RESPONSIVE */
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 @media (max-width: 400px) {
-  .profil-gweh {
-    width: 90%;
-  }
+    .profile-card {
+        width: 100%;
+        padding: 35px 22px;
+    }
 }
