@@ -417,6 +417,7 @@ section {
     border-radius: 13px;
     overflow: hidden;
     transition: 0.3s ease;
+    display: block;
 }
 
 .portfolio-card:hover {
@@ -446,6 +447,25 @@ section {
 .portfolio-card p {
     color: var(--muted);
     font-size: 13px;
+}
+
+.portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-link {
+    gap: 13px;
+}
+
+.portfolio-link span {
+    font-size: 16px;
 }
 
 
